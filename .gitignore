@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.vsix
+.test-output/
+artifacts/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

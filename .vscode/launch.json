@@ -1,0 +1,4 @@
+{
+  "version": "0.2.0",
+  "configurations": [{ "name": "UIFlow M4", "type": "extensionHost", "request": "launch", "args": ["--extensionDevelopmentPath=${workspaceFolder}/apps/vscode-extension", "${workspaceFolder}"], "outFiles": ["${workspaceFolder}/apps/vscode-extension/dist/**/*.cjs"], "preLaunchTask": "UIFlow build" }]
+}

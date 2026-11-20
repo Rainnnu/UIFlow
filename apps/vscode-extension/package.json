@@ -1,0 +1,48 @@
+{
+  "name": "uiflow",
+  "displayName": "UIFlow",
+  "version": "0.0.1",
+  "publisher": "uiflow-local",
+  "description": "React component structure and static dependencies — V1 preview",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "main": "./dist/extension.cjs",
+  "dependencies": {
+    "typescript": "5.8.3"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "uiflow.openGraph",
+        "title": "UIFlow: 查看当前组件结构"
+      },
+      {
+        "command": "uiflow.openDemo",
+        "title": "UIFlow: 打开演示画布"
+      },
+      {
+        "command": "uiflow.refreshGraph",
+        "title": "UIFlow: 刷新当前图"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "uiflow.openGraph",
+          "when": "resourceLangId == typescriptreact",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": false
+  }
+}
