@@ -9,6 +9,7 @@
 - 用户随后指定 https://github.com/Rainnnu/UIFlow.git；ls-remote 成功且没有现有 refs，可推送新的 main 而不覆盖已有提交。初始化 Git；暂存 75 个源码/配置/文档文件，排除 node_modules、dist、artifacts、.test-output 和本地密钥配置；常见私钥/GitHub Token/AWS Key 模式扫描未发现匹配（非完整安全审计）。
 - 最终 pnpm typecheck 通过、pnpm test 8 文件 49 项通过、pnpm package 构建及 VSIX 打包成功。联网 pnpm audit 为 0 条公告；沙箱内首次因 DNS 限制失败，放行网络后重查通过。React Flow use client 提示仍存在。
 - 交付定位为 V1 源码预览基线，保留扩展版本 0.0.1，不提前声明正式稳定版完成。最低 VS Code、连续拖动完整人工复核、大图性能和正式许可仍见发布检查表。
+- 已推送 main 至用户指定 GitHub 仓库，源码提交 dbcd5debe6e504f55f41da8b7b8d0ad0e1acffbe；远程 refs 核对一致。首次 Windows GitHub Actions 已完成且 success：https://github.com/Rainnnu/UIFlow/actions/runs/44674929207 。该结果对应此源码提交，后续本项记录为纯文档提交。
 
 ## 当前里程碑：M4（本地预览包可交付，正式发布条件未全部完成）
 
